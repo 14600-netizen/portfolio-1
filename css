@@ -1,0 +1,127 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#fff5fa;
+    color:#444;
+}
+
+/* เมนูด้านบน */
+
+header{
+    background:#ffb6d5;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    padding:15px;
+}
+
+.logo{
+    font-size:28px;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffe6f1;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#ff5fa2;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff7fb5;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff5fa2;
+}
+
+/* เนื้อหา */
+
+.container{
+    width:85%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#ff5fa2;
+    margin-bottom:15px;
+}
+
+/* รูปภาพ */
+
+img{
+    max-width:100%;
+    border-radius:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#ffb6d5;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
