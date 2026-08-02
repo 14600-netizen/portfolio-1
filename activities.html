@@ -1,1 +1,143 @@
+<!DOCTYPE html>
 
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ผลงาน | Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Portfolio</div>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+
+<li><a href="profile.html">ประวัติ</a></li>
+
+<li><a href="education.html">การศึกษา</a></li>
+
+<li><a href="activities.html">ผลงาน</a></li>
+
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h1 class="section-title">ผลงานและกิจกรรม</h1>
+
+<div class="activity-grid">
+
+<div class="card">
+
+<img src="images/FF36D55A-2BF7-40F8-8DD1-223536346253.jpeg" alt="กิจกรรม1">
+
+<div class="card-content">
+
+<h3>กิจกรรมที่ 1</h3>
+
+<p>ได้รับเกียรติบัตรสอบธรรมะชั้นโท ปีการศึกษา 2567</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/9667CAE0-0909-46CA-BFD0-CF43E0DDABE8.jpeg" alt="กิจกรรม2">
+
+<div class="card-content">
+
+<h3>กิจกรรมที่ 2</h3>
+
+<p>เข้าร่วมกิจกรรมตอบคำถามวันวิทยาศาสตร์</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+    <img src="images/F0F6E19D-4B23-4AEB-9C50-DCDE3E89E091.jpeg" alt="กิจกรรม3">
+
+    <div class="card-content">
+
+        <h3>กิจกรรมที่ 3</h3>
+
+        <p>ได้รับรางวัล "คนดีศรีพานทอง" จากการมีคะแนนความประพฤติดีเด่น</p>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 My Portfolio</p>
+
+</footer>
+
+<!-- กล่องแสดงรูป -->
+
+<div id="popup" class="popup" onclick="closePopup()">
+
+    <img id="popup-img">
+
+</div>
+
+<script>
+
+const images=document.querySelectorAll(".card img");
+
+const popup=document.getElementById("popup");
+
+const popupImg=document.getElementById("popup-img");
+
+images.forEach(img=>{
+
+img.onclick=function(){
+
+popup.style.display="flex";
+
+popupImg.src=this.src;
+
+}
+
+});
+
+function closePopup(){
+
+popup.style.display="none";
+
+}
+
+</script>
+
+</body>
+
+</html>
